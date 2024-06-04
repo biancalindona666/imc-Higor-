@@ -1,0 +1,22 @@
+nome = str(input("Digite o nome do aluno:"))
+altura = float(input("Digite a altura aluno:"))
+peso = float(input("Digite o peso do aluno:"))
+
+IMC = peso / (altura * altura)
+
+print("O IMC do aluno é:", round (IMC))
+
+if (IMC < 18.4):
+ print("voce esta abaixo do peso")
+                 
+elif (IMC >= 18.5) and (IMC<= 24.9):
+  print ("voce esta no seu peso ideal")
+
+elif (IMC >= 25) and (IMC <= 34.9):
+  print("voce esta com obesidade grau 1")
+
+elif (IMC >= 35) and (IMC <= 39,9):
+  print ("voce esta com obesidade grau 2")
+
+elif (IMC > 40):
+  print ("voce esta com obesidade grau 3")
